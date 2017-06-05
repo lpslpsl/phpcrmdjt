@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="myform" method="post">
+    <table width="532" align="center" bgcolor="#ccff66">
+        <td height="70" colspan="2">$nbsp;</td>
+        <tr>
+            <td width="281" align="center">
+                username:<input name="user" type="text" id="user" size="20">
+pass:<input type="password" name="pwd" size="20">
+
+            </td>
+        </tr>
+        <tr>
+            <td height="43" align="center">
+                <input type="submit" name="submit" onclick="mycheck();">
+                <input type="reset" name="submit2" value="reset">
+            </td>
+        </tr>
+    </table>
+</form>
+<script>
+    function mycheck(){
+        if(myform.user.value==""){
+            alert("用户名不能为空");myform.user.onfocus();return false;
+        } if(myform.pwd.value==""){
+            alert("用户密码不能为空");myform.pwd.onfocus();return false;
+        }
+    }
+</script>
+</body>
+</html>
