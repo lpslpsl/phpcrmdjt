@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table width="761" >
+    <tr>
+        <td width="67" align="center"><a href="#" onmousemove="Lmenu('新品')">新品</a></td>
+        <td width="67" align="center"><a href="#" onmousemove="Lmenu('购物车')">购物车</a></td>
+        <td width="67" align="center"><a href="#" onmousemove="Lmenu('个人中心')">个人中心</a></td>
+    </tr>
+</table>
+<div id="submenu"></div>
+<script>
+    function Lmenu(value){
+        switch(value){
+            case "新品":
+                    submenu.innerHTML="<a href='#'>商品展示</a>|<a href='#'>商品查询</a>"
+                    alert("新品");
+                break;
+            case "购物车":
+                    submenu.innerHTML="<a href='#'>购物车</a>|<a href='#'>购物车</a>"
+                break;
+            case "个人中心":
+                    submenu.innerHTML="<a href='#'>个人中心</a>|<a href='#'>个人中心</a>"
+                break;
+        }
+    }
+</script>
+</body>
+</html>
