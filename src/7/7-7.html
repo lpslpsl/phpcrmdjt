@@ -1,0 +1,31 @@
+
+<form name="form1" method="post">
+<table width="323" border="1" cellpadding="1" cellspacing="1" bgcolor="#ffffff">
+    <tr>
+        <td width="118" height="24" align="right" bgcolor="#ccff33">username:  </td>
+        <td width="192" height="24"bgcolor="#ccff33">
+            <input name="user" type="text" class="inputcss" id="user" size="24">
+        </td>
+    </tr>
+    <tr>
+     <td height="24" align="right" bgcolor="#ccff33">password:</td>
+        <td height="24" bgcolor="#ccff33">
+            <input name="pwd" type="password" class="inputcss" id="pwd" size="24">
+        </td>
+    </tr>
+    <tr align="center">
+        <td height="24" colspan="2">
+<input name="submit" type="submit" value="login">
+        </td>
+    </tr>
+</table>
+
+</form>
+<?php
+
+while(list($name,$value)=each($_POST)){
+    if($name!="submit"){
+        echo $name.$value;
+    }
+}
+ ?>
