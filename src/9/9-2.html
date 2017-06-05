@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="form1" method="post">
+    <span>检测闰年：</span>
+    <select name="year">
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2010">2010</option>
+        <option value="2008">2008</option>
+    </select>
+    <input type="submit" onclick="check();">
+</form>
+<script language="JavaScript">
+    function  check(){
+        var year1=form1.year.value;
+        if(year1%4==0&&year1%100!=0){
+            alert(year1+"是闰年")
+        }else {
+            alert(year1+"不是闰年")
+
+        }
+    }
+</script>
+</body>
+</html>
